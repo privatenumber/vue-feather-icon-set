@@ -1,0 +1,1 @@
+# vue-feather-icons-optimized
