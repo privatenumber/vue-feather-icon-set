@@ -2,7 +2,7 @@
   "name": "vue-feather-icons-optimized",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/icon-layer.js",
   "scripts": {
     "build": "webpack --config build/webpack.config"
   },

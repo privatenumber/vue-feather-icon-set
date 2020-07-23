@@ -17,7 +17,7 @@ module.exports = {
 
 	output: {
 		path: path.resolve(__dirname, '../'),
-		libraryTarget: 'commonjs',
+		libraryTarget: 'commonjs2',
 	},
 
 	externals: [
