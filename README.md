@@ -2,6 +2,57 @@
 
 Optimized [Feather](https://feathericons.com) icon set for Vue
 
+
+## :rocket: Install
+```sh
+npm i vue-feather-icon-set
+```
+
+## 👩‍🏫 Usage
+1. **Put the _IconLayer_ at the top of your app.**
+
+    The IconLayer needs to be top-level, above any icon usage. It's okay to put it in the app too as long as it's before any icons are used.
+
+    ```vue
+    <template>
+      <icon-layer>
+        <app />
+      </icon-layer>
+    </template>
+
+    <script>
+    import IconLayer from 'vue-feather-icon-set';
+    import App from './app';
+
+    export default {
+      components: {
+        IconLayer,
+        App,
+      }
+    };
+    </script>
+    ```
+2. **Import the icon and use it!**
+
+
+    ```vue
+    <template>
+      <div>
+        <alert-triangle-icon />
+      </div>
+    </template>
+
+    <script>
+    import AlertTriangleIcon from 'vue-feather-icon-set/icons/alert-triangle';
+
+    export default {
+      components: {
+        AlertTriangleIcon
+      }
+    };
+    </script>
+    ```
+
 ## :raising_hand: How is this optimized?
 SVGs can be referenced and reused like variables with the [`<use>` element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This icon-set leverages this feature to define referencable SVGs so that repeated usage of an icon isn't duplicated in the DOM.
 
@@ -32,10 +83,3 @@ Demo on [JSFiddle](https://jsfiddle.net/hirokiosame/94vbm5pr/)
   <use href="#circle" />
 </svg>
 ```
-
-
-## :rocket: Install
-```sh
-npm i vue-feather-icon-set
-```
-
