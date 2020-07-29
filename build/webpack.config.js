@@ -5,10 +5,6 @@ const { getIconEntries } = require('./utils');
 module.exports = {
 	mode: 'production',
 
-	// optimization: {
-	// 	minimize: false,
-	// },
-
 	entry: {
 		'lib/icon-layer': 'vue-svg-icon-set/icons-layer.vue',
 		'lib/icon-register': 'vue-svg-icon-set/icon-register',
