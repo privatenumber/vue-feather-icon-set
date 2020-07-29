@@ -1,6 +1,7 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const { getIconEntries } = require('./utils');
+const EntryFile = require('./entry-file');
 
 module.exports = {
 	mode: 'production',
@@ -51,5 +52,6 @@ module.exports = {
 
 	plugins: [
 		new VueLoaderPlugin(),
+		new EntryFile(),
 	],
 };

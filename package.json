@@ -7,7 +7,6 @@
     "feather icons",
     "optimized"
   ],
-  "main": "lib/icon-layer.js",
   "scripts": {
     "build": "webpack --config build/webpack.config"
   },
@@ -25,6 +24,7 @@
     "feather-icons": "^4.28.0"
   },
   "devDependencies": {
+    "lodash": "^4.17.19",
     "vue-loader": "^15.9.3",
     "vue-svg-icon-set": "github:privatenumber/vue-svg-icon-set",
     "vue-template-compiler": "^2.6.11",
