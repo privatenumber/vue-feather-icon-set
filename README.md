@@ -53,7 +53,9 @@ npm i vue-feather-icon-set
     </script>
     ```
 
-## :raising_hand: How is this optimized?
+## :raising_hand: FAQ
+
+### How is this optimized?
 SVGs can be referenced and reused like variables with the [`<use>` element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This icon-set leverages this feature to define referencable SVGs so that repeated usage of an icon isn't duplicated in the DOM.
 
 Demo on [JSFiddle](https://jsfiddle.net/hirokiosame/94vbm5pr/)
@@ -83,3 +85,7 @@ Demo on [JSFiddle](https://jsfiddle.net/hirokiosame/94vbm5pr/)
   <use href="#circle" />
 </svg>
 ```
+
+### Does this work with SSR?
+Yes! However, the SVG will not be inlined in the server-rendered document. It's actually a technical limitation because each icon usages hoists up the SVG rendering to happen in the parent _IconLayer_, and SSR only renders once. This could work to an advantage as it keeps the server-rendered doc from including SVGs that may be large or repeated. [Here's a working demo](https://github.com/privatenumber/vue-svg-icon-set-ssr-demo).
+
