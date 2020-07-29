@@ -43,7 +43,11 @@ npm i vue-feather-icon-set
     </template>
 
     <script>
+    // direct import
     import AlertTriangleIcon from 'vue-feather-icon-set/icons/alert-triangle';
+
+    // or, if you have tree-shaking
+    import { AlertTriangleIcon } from 'vue-feather-icon-set';
 
     export default {
       components: {
