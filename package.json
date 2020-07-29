@@ -1,5 +1,5 @@
 {
-  "name": "vue-feather-icons-optimized",
+  "name": "vue-feather-icon-set",
   "version": "1.0.0",
   "description": "",
   "main": "lib/icon-layer.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/privatenumber/vue-feather-icons-optimized.git"
+    "url": "git+https://github.com/privatenumber/vue-feather-icon-set.git"
   },
   "author": "Hiroki Osame <hiroki.osame@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/privatenumber/vue-feather-icons-optimized/issues"
+    "url": "https://github.com/privatenumber/vue-feather-icon-set/issues"
   },
-  "homepage": "https://github.com/privatenumber/vue-feather-icons-optimized#readme",
+  "homepage": "https://github.com/privatenumber/vue-feather-icon-set#readme",
   "dependencies": {
     "feather-icons": "^4.28.0"
   },

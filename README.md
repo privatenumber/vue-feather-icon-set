@@ -1,4 +1,4 @@
-# vue-feather-icons-optimized
+# 🦢 vue-feather-icons-optimized
 
 
 ### Symbols
