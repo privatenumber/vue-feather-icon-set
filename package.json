@@ -1,7 +1,12 @@
 {
   "name": "vue-feather-icon-set",
   "version": "1.0.0",
-  "description": "",
+  "description": "Optimized Feather icon set for Vue",
+  "keywords": [
+    "vue",
+    "feather icons",
+    "optimized"
+  ],
   "main": "lib/icon-layer.js",
   "scripts": {
     "build": "webpack --config build/webpack.config"
