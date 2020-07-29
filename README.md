@@ -1,5 +1,4 @@
-# 🦢 vue-feather-icons-optimized
+# 🦢 vue-feather-icon-set
 
 
-### Symbols
-https://css-tricks.com/svg-symbol-good-choice-icons/
+
