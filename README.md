@@ -1,6 +1,6 @@
 # 🦢 vue-feather-icon-set <a href="https://npm.im/vue-feather-icon-set"><img src="https://badgen.net/npm/v/vue-feather-icon-set"></a> <a href="https://npm.im/vue-feather-icon-set"><img src="https://badgen.net/npm/dm/vue-feather-icon-set"></a> <a href="https://packagephobia.now.sh/result?p=vue-feather-icon-set"><img src="https://packagephobia.now.sh/badge?p=vue-feather-icon-set"></a> <a href="https://bundlephobia.com/result?p=vue-feather-icon-set"><img src="https://badgen.net/bundlephobia/minzip/vue-feather-icon-set"></a>
 
-Optimized [Feather](https://feathericons.com) icon set for Vue
+Optimized [Feather](https://feathericons.com) icon set for Vue using SVG references
 
 
 ## :rocket: Install
@@ -10,7 +10,6 @@ npm i vue-feather-icon-set
 
 ## 👩‍🏫 Usage
 1. **Put the _IconLayer_ at the top of your app.**
-
     The IconLayer needs to be top-level, above any icon usage. It's okay to put it in the app too as long as it's before any icons are used.
 
     ```vue
@@ -33,7 +32,6 @@ npm i vue-feather-icon-set
     </script>
     ```
 2. **Import the icon and use it!**
-
 
     ```vue
     <template>
