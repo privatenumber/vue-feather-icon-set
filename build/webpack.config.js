@@ -7,7 +7,7 @@ module.exports = {
 	mode: 'production',
 
 	entry: {
-		'lib/icon-layer': 'vue-svg-icon-set/icons-layer.vue',
+		'lib/icon-layer': 'vue-svg-icon-set/icon-layer.vue',
 		'lib/icon-register': 'vue-svg-icon-set/icon-register',
 		...getIconEntries('icons/'),
 	},
