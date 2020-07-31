@@ -1,6 +1,6 @@
 const path = require('path');
-const { VueLoaderPlugin } = require('vue-loader');
-const { getIconEntries } = require('./utils');
+const {VueLoaderPlugin} = require('vue-loader');
+const {getIconEntries} = require('./utils');
 const EntryFile = require('./entry-file');
 
 module.exports = {
@@ -18,10 +18,11 @@ module.exports = {
 	},
 
 	externals: [
-		function(from, req, cb) {
-			if (req.endsWith('icon-register.js')) {
+		function (from, request, cb) {
+			if (request.endsWith('icon-register.js')) {
 				return cb(null, '../lib/icon-register.js');
 			}
+
 			cb();
 		},
 	],

@@ -9,7 +9,7 @@ function getIconEntries(dir) {
 		.filter(f => f.endsWith('.svg'));
 
 	const entries = {};
-	iconPaths.forEach((file) => {
+	iconPaths.forEach(file => {
 		entries[path.join(dir, path.basename(file, '.svg'))] = path.join('feather-icons/dist/icons/', file);
 	});
 	return entries;
