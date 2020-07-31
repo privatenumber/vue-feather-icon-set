@@ -58,7 +58,7 @@ npm i vue-feather-icon-set
 ## :raising_hand: FAQ
 
 ### How is this optimized?
-SVGs can be referenced and reused like variables with the [`<use>` element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This icon-set leverages this feature to define referencable SVGs so that repeated usage of an icon isn't duplicated in the DOM.
+It's optimized using [vue-svg-icon-set](https://www.npmjs.com/package/vue-svg-icon-set) by leveraging how SVGs can be referenced and reused like variables with the [`<use>` element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This icon-set leverages this feature to define referencable SVGs so that repeated usage of an icon isn't duplicated in the DOM.
 
 Demo on [JSFiddle](https://jsfiddle.net/hirokiosame/94vbm5pr/)
 
