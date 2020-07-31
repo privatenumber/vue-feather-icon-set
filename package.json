@@ -21,10 +21,20 @@
     "lint": "xo",
     "build": "webpack --config build/webpack.config"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "xo --fix"
+  },
   "dependencies": {
     "feather-icons": "^4.28.0"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
     "vue-loader": "^15.9.3",
     "vue-svg-icon-set": "^0.0.1",
