@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "lint": "xo",
-    "build": "webpack --config build/webpack.config"
+    "build": "webpack --config build/webpack.config",
+    "version": "standard-version --preset angular"
   },
   "husky": {
     "hooks": {
