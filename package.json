@@ -17,6 +17,11 @@
     "url": "https://github.com/privatenumber/vue-feather-icon-set/issues"
   },
   "homepage": "https://github.com/privatenumber/vue-feather-icon-set#readme",
+  "files": [
+    "/index.js",
+    "/lib",
+    "/icons"
+  ],
   "scripts": {
     "lint": "xo",
     "build": "webpack --config build/webpack.config"
