@@ -40,10 +40,8 @@
       "prerelease": "npm run build"
     }
   },
-  "dependencies": {
-    "feather-icons": "^4.28.0"
-  },
   "devDependencies": {
+    "feather-icons": "^4.28.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
