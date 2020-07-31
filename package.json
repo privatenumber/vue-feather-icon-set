@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "xo",
     "build": "webpack --config build/webpack.config",
-    "release": "standard-version --preset angular"
+    "release": "standard-version -a --preset angular"
   },
   "husky": {
     "hooks": {
@@ -34,6 +34,11 @@
   },
   "lint-staged": {
     "*.js": "xo --fix"
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run build"
+    }
   },
   "dependencies": {
     "feather-icons": "^4.28.0"
