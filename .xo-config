@@ -1,0 +1,10 @@
+{
+	"rules": {
+		"comma-dangle": ["error", "always-multiline"]
+	},
+	"ignores": [
+		"index.js",
+		"lib",
+		"icons"
+	]
+}
