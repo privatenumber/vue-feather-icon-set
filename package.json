@@ -17,6 +17,7 @@
     "url": "https://github.com/privatenumber/vue-feather-icon-set/issues"
   },
   "homepage": "https://github.com/privatenumber/vue-feather-icon-set#readme",
+  "sideEffects": false,
   "files": [
     "/index.js",
     "/lib",
