@@ -54,5 +54,6 @@ typings/
 
 # Dist files
 /index.js
+/index.esm.js
 /lib
 /icons
