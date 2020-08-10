@@ -1,6 +1,6 @@
 {
   "name": "vue-feather-icon-set",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Optimized Feather icon set for Vue",
   "keywords": [
     "vue",
@@ -27,8 +27,7 @@
   "module": "index.esm.js",
   "scripts": {
     "lint": "xo",
-    "build": "webpack --config build/webpack.config",
-    "release": "standard-version --preset angular"
+    "build": "webpack --config build/webpack.config"
   },
   "husky": {
     "hooks": {
@@ -38,11 +37,6 @@
   "lint-staged": {
     "*.js": "xo --fix"
   },
-  "standard-version": {
-    "scripts": {
-      "prerelease": "npm run build"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
@@ -50,7 +44,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
-    "standard-version": "^8.0.2",
+    "semantic-release": "^17.1.1",
     "vue-loader": "^15.9.3",
     "vue-svg-icon-set": "^0.0.1",
     "vue-template-compiler": "^2.6.11",
