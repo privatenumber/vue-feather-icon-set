@@ -23,6 +23,8 @@
     "/lib",
     "/icons"
   ],
+  "main": "index.js",
+  "module": "index.esm.js",
   "scripts": {
     "lint": "xo",
     "build": "webpack --config build/webpack.config",
@@ -42,6 +44,8 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "feather-icons": "^4.28.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",

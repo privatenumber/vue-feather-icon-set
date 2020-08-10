@@ -1,4 +1,5 @@
 const path = require('path');
+const babel = require('@babel/core');
 const {camelCase, upperFirst} = require('lodash');
 const pascal = string => upperFirst(camelCase(string));
 
@@ -16,7 +17,9 @@ class EntryFile {
 			iconExports.push('export { default } from \'./lib/icon-layer\'');
 
 			const source = iconExports.join('\n');
-			compilation.assets['index.js'] = {
+
+			// ESM
+			compilation.assets['index.esm.js'] = {
 				source() {
 					return source;
 				},
@@ -24,6 +27,31 @@ class EntryFile {
 					return source.length;
 				},
 			};
+
+			// CJS
+			babel.transform(source, {
+				presets: [
+					['@babel/preset-env', {
+						targets: {
+							node: true,
+						},
+					}],
+				],
+			}, (err, {code}) => {
+				if (err) {
+					return cb(err);
+				}
+
+				compilation.assets['index.js'] = {
+					source() {
+						return code;
+					},
+					size() {
+						return code.length;
+					},
+				};
+			});
+
 			cb();
 		});
 	}
